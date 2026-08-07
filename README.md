@@ -185,18 +185,18 @@ environment variables:
 ## Notes on Requirements Coverage
 
 **Core features**
-- **Job Submission API** — `POST /api/jobs` (type, payload, priority) ✅
-- **Async Processing** — `asyncio` workers, status transitions Pending → Running → Completed/Failed ✅
-- **Queue Management** — FIFO + priority queue, configurable retry limits ✅
-- **Worker System** — independent of API request cycle, concurrent, crash-safe ✅
-- **Monitoring** — `/api/dashboard/stats`, `/api/dashboard/queue`, `/dashboard-ui/` ✅
-- **Logging & Error Handling** — structured JSON logs for submission, start, completion, retries, and permanent failures, in `logs/app.log` ✅
+- **Job Submission API** — `POST /api/jobs` (type, payload, priority) 
+- **Async Processing** — `asyncio` workers, status transitions Pending → Running → Completed/Failed 
+- **Queue Management** — FIFO + priority queue, configurable retry limits 
+- **Worker System** — independent of API request cycle, concurrent, crash-safe 
+- **Monitoring** — `/api/dashboard/stats`, `/api/dashboard/queue`, `/dashboard-ui/` 
+- **Logging & Error Handling** — structured JSON logs for submission, start, completion, retries, and permanent failures, in `logs/app.log` 
 
 **Bonus features implemented**
-- Job cancellation ✅
-- Dead-letter queue ✅
-- Rate limiting ✅
-- Simple dashboard UI ✅
+- Job cancellation 
+- Dead-letter queue 
+- Rate limiting 
+- Simple dashboard UI 
 
 **Bonus features not implemented** (all optional per the brief): scheduled/cron jobs, WebSocket live updates, Dockerized deployment.
 
